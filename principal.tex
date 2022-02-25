@@ -1,0 +1,520 @@
+\documentclass{article}
+\title{\textbf{PASCCO 2020}}
+\author{\textbf{Elvis de Brito}}
+\date{30 de outubro, 2020}
+\usepackage{amsmath,amssymb,latexsym, amsthm} 
+\usepackage{fullpage, indentfirst}
+\usepackage[portuguese]{babel}
+\usepackage{natbib}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+\usepackage{chemfig}
+\usepackage{color,graphicx}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\newtcolorbox{boxx}{colback=pink!20!white,colframe=black!100!black}
+\newtcolorbox{carlos}{colback=black!1!white,colframe=black!75!black}
+
+
+\title{{\fontfamily{put}\selectfont PASCCO 2020}
+}
+\author{\fontfamily{put}\selectfont {Elvis de Brito}
+}
+\date{30 de outubro, 2020}
+
+
+\begin{document}
+
+
+\maketitle
+
+\begin{center}
+
+\section*{\fontfamily{put}\selectfont Questionário
+}
+
+%Documento com indexação de respostas para o questionário da PASCCO 2020, total de 30 questões
+%Aos corretores : agradeço a oportunidade
+
+\end{center}
+
+
+    \begin{boxx}
+    \subsection*{Questão 1)}
+    O fóton tem massa? Explique.
+\end{boxx}
+Resposta : 
+ Não; a partir de análises em que relacionamos as partículas elementares e suas energias mínimas a seus alcances de interação, temos que :
+ 
+ \begin{equation}
+    \Delta E \approx m\cdot c^2 
+ \end{equation}
+ \begin{equation}
+     \Delta E \cdot \Delta t \approx \hslash
+ \end{equation}
+ \begin{equation}
+     \longrightarrow c \cdot \Delta t \approx \frac{\hslash}{m \cdot c}
+ \end{equation}
+ \begin{equation}
+     V(r)=e^{-\frac{m\cdot c\cdot r}{\hslash}} \cdot \frac{1}{r}
+ \end{equation}
+ 
+     Portanto, temos que quanto maior a massa da partícula, menor seu alcance. Tendo o fóton massa nula:
+     \begin{equation*}
+       \longrightarrow  V(r) = 1 \cdot \frac{1}{r}
+     \end{equation*}
+     a equação corresponde ao seu longo alcance, o que corrobora com a predicção teórica.
+     
+     Apesar que, existem limites superiores para sua massa, advindo de experimentos que inferiram, inclusive, a lei de Coulomb, e conforme  \textit{Plimton and Lawton (1936)}, seu limite superior seria de $3,4\cdot10^{-44}\si{g}$. Esses limites de massas aferidas são, na verdade, uma suposição para aferimentos práticos, o que diverge da teoria. Atualmente a melhor aferência a cerca da massa do fóton é o limite superior de $10^{-55}\si{kg}$  
+
+
+     
+     
+     \vspace{2mm}
+    
+
+\vspace{5mm}
+\begin{boxx}
+\subsection*{Questão 2)}
+Qual é a equação de movimento do potencial vetor (A)? Explique.
+\end{boxx}
+  Para um campo vetorial, o potencial vetor é descrito conforme a equação \textcolor{blue}{(6)}, e dele obtém-se o resultado em \textcolor{blue}{(7)} :
+\begin{equation}
+    \nabla\cdot\mathbb{B}=0 
+\end{equation}
+\begin{equation}
+    \mathbb{B}=\nabla\times\mathbb{A}
+\end{equation}
+\begin{equation}
+    \Rightarrow \nabla\cdot(\nabla\times\mathbb{A})=0
+\end{equation}
+
+
+
+
+\vspace{5mm}
+\begin{boxx}
+\subsection*{Questão 3)}
+Por que a equação de Klein-Gordon descreve a dinâmica de um campo escalar e não de um vetor?
+\end{boxx}
+Porque a equação de Klein-Gordon descreve os primórdios do estudo da Quântica, e sua primeira teorização é para partículas de spin 0, que precede as equações de Dirac para spin $\frac{1}{2}$. Assim, seus estudos se baseiam em campos quantizados e seus mais baixos estados de excitação, comportando-se como partículas massivas com spin 0, mas cargas positivas, negativas e neutras. 
+
+\subsection*{Questão 4)}
+\begin{boxx}
+A equação de Dirac é invariante por qual tipo de simetria?
+\end{boxx}
+ As simetrias são:
+\begin{itemize}
+    \item simetria sob transformações de Lorentz (a equação de Dirac
+é covariante sob as transformações de Lorentz);
+
+    \item simetria sob U(1) global, no caso da equação livre;
+
+    \item simetria sob U(1) local, no caso do elétron estar interagindo com
+um campo eletromagnético extermo;
+
+    \item simetria sob conjugação de carga, sob paridade e sob reversão temporal
+(as 3 simetrias discretas); no final, simetria sob CPT.
+\end{itemize}
+
+\subsection*{Questão 5)}
+\begin{boxx}
+Por que a invariância de gauge local é importante?
+\end{boxx}
+ A simetria de gauge é fundamental para garantir que o fóton ou,
+no caso geral, o bóson de gauge seja um puro spin-1. Se não houver
+a simetria de gauge, a componente escalar do campo de gauge pode
+se propagar e se acoplar e, assim, inviabilizar a teoria. Ou seja, a
+simetria de gauge é importante para assegurar a transversalidade do
+fóton.
+
+\subsection*{Questão 6)}
+\begin{boxx}
+O que é um kink? Explique.
+\end{boxx}
+
+\subsection*{Questão 7)}
+\begin{boxx}
+O que você entende sobre a solução kink-antikink?
+\end{boxx}
+
+\subsection*{Questão 8)}
+\begin{boxx}
+O que é um buraco negro de Kerr?
+\end{boxx}
+ Formulado pelo físico Roy P. Kerr, é a construção teórica de um Buraco Negro com massa e rotação (momento angular).
+  Conforme as equações :
+  \begin{equation}
+      ds^2 = - \bigg(\frac{\Delta-a^2\sin^2{\theta}}{\Sigma}\bigg)dt^2-\frac{2a\sin^2{\theta(r^2+a^2-\Delta)}}{\Sigma}dtd\phi + \bigg[\frac{(r^2+a^2)^2-\Delta a^2\sin^2{\theta}}{\Sigma}\bigg]\sin^2{\theta}d\phi^2 + \frac{\Sigma}{\Delta}dr^2 + \Sigma d \theta^2
+  \end{equation}
+  onde tem-se $\Sigma = r^2 + a^2\cos^2{\theta}$  e  $\Delta = r^2 + a^2 + e^2 - 2Mr$. Além de conter uma ergosfera.
+
+ 
+\subsection*{Questão 9)}
+\begin{boxx}
+Fale um pouco sobre a termodinâmica de um buraco negro
+\end{boxx}
+Para o estudo termodinâmico de um buraco negro, Stephen Hawking formula ideias como em que a entropia é proporcional à area, e construções equivalentes às leis da termodinâmica para a proposta do fenômeno cósmico : 
+\begin{itemize}
+    \item Lei zero : $\kappa$ sendo constante, assim como $T$, além de que $\frac{\kappa}{2\pi}$
+    
+    \item Lei um : $dE = TdS-dW \longrightarrow dM = \kappa d A - dW$ 
+    
+    \item Lei dois : $S$ não decresce, como $A$ também não decresce
+\end{itemize}
+ 
+\subsection*{Questão 10)}
+\begin{boxx}
+O que é o processo de Penrose?
+\end{boxx}
+ É descrito por um físico inglês, que uma partícula, com uma determinada energia, caindo em um buraco, havendo sincronização no processo, ela poderia ejetar parte de sua massa/energia e assim sair com energia maior do que entrou.
+ 
+\subsection*{Questão 11)}
+\begin{boxx}
+O que são: horizonte externo, horizonte interno, ergosfera?
+\end{boxx}
+
+\begin{itemize}
+    \item Horizonte externo : limite de não retorno
+    
+    \item Horizonte interno : limite da predicção da dinâmica sem conhecimento do que acontece no buraco negro, também chamado de "horizonte de Cauchy". Teorizado como instável
+    
+    \item Ergosfera: região que circunda o horizonte de eventos e e o espaço-tempo é arrastado por sua rotação, ou seja, onde curvas com acelerações finitas não podem ficar paradas.
+\end{itemize}
+
+\subsection*{Questão 12)}
+\begin{boxx}
+ O próton pode decair em um pósitron? Explique. 
+\end{boxx}
+\subsection*{Questão 13)}
+\begin{boxx}
+O Higgs se acopla com o fóton ou glúons? Explique.
+\end{boxx}
+ O Bóson de Higgs, na teoria, não se acoplaria com nenhuma das partículas situadas no questionamento, a partir de que ambos não possuem massa, portanto não existe para os pares Higgs-fóton ou Higgs-glúon acoplamento efetivo.
+ 
+\subsection*{Questão 14)}
+\begin{boxx}
+Existe um déficit no fluxo de neutrinos oriundos do Sol? Fale a respeito.
+\end{boxx}
+
+ Sim; conforme o avanço da formulação das partículas fundamentais e a descoberta da existência dos neutrinos, viu-se que o Sol, dentro de seu modelo padrão estelar, emitia além de fótons também os neutrinos-eletrônicos $(\nu_e)$; dois exemplos de reações recorrentes e  que correspondem a 87\% do fluxo dessas "novas"\space partículas que chegam na Terra (86\%+1\% respectivamente) são :
+
+\begin{center}
+    \schemestart
+       p + p \arrow{->} d + e$^+$ + $\nu_e$ ($E \leq 0.42 \si{\MeV}$)
+    \schemestop
+\end{center}
+
+\begin{center}
+    \schemestart
+      p + e$^-$ + p \arrow{->} d + $\nu_e$ ($E = 1.44 \si{\MeV}$)
+    \schemestop
+\end{center}
+ 
+ Esses neutrinos-eletrônicos atravessam a terra e seguem além-Universo. Ao teorizar-se a quantidade deles que adviam do Sol, percebeu-se que os cálculos não conferiam com os dados experimentais - os neutrinos vindos do sol eram apenas $\frac{1}{3}$ do que o esperado, o que ficou conhecido como "Problema dos Neutrinos Solares"\space Após questionamentos a cerca das teorias envolvidas (Modelo padrão Solar e o Modelo Padrão de Partículas elementares) viu-se que elas estavam corretas, e o Problema dos Neutrinos Solares precisava de uma explicação. A teoria atualmente aceita é a de Oscilação entre Neutrinos : 
+ 
+ \begin{center}
+    \schemestart
+    $\nu_e$ \arrow{<=>} $\nu_{\tau}$ \arrow{<=>} $\nu_\mu$ 
+    \schemestop
+\end{center}
+
+Portanto, viu-se que o fato dos detectores estarem configurados para contabilizarem o neutrino-eletrônico, eles não constatavam suas transmutações para o neutrino-tau e o neutrino-múon.
+\subsection*{Questão 15)}
+\begin{boxx}
+Por que os léptons carregados não oscilam?
+\end{boxx}
+ Porque a previsão de oscilação(que começa com os neutrinos) é explicada pela fórmula :
+ 
+\begin{equation}
+    P(l\to l', x) = \sum_m U_{lm}^2\cdot U_{l'm}^2 + \sum_{m'\neq m} U_{lm} \cdot U_{l'm} \cdot U_{lm'} \cdot U_{l'm'} \cdot \cos{\bigg( 2\pi\frac{x}{L_{m',m}} \bigg) }
+\end{equation}
+, onde $L_{m',m} = 2\pi\cdot\frac{2P_v}{|M_m^2-M_m'^2|}$ e $U \equiv \text{matriz de mistura}$; portanto observa-se que para massas muito díspares $M_m^2 >> M_m'^2$ ou $M_m^2 << M_m'^2$ perdemos $L_{m',m}$ porque tende a 0, logo também a oscilação.
+ Observemos que: 
+  \begin{itemize}
+     \item $M_{e^-} \approx 0.5 \si{MeV/c^2}$
+      
+     \item $M_{\tau^-} \approx 1 780 \si{MeV/c^2}$
+      
+     \item  $M_\mu^- \approx 105.7 \si{MeV/c^2}$
+  \end{itemize}
+   As massas dos léptons são muito distintas entre si, em ordens de grandeza, portanto $L_{m',m} \to 0$ o que corrobora a pouca probabilidade da oscilação dos léptons. 
+
+
+\subsection*{Questão 16)}
+\begin{boxx}
+
+Qual o operador efetivo que nos guia para gerar massa de
+Majorana para os neutrinos?
+\end{boxx}
+
+ Um operador efetivo de dimensão-5, da forma da equação \textcolor{blue}{(12)}:
+ \begin{equation}
+    \frac{y}{\Lambda}(\Bar{L}^c  \Tilde{H})(\Tilde{H}^T L)
+ \end{equation}
+ 
+ 
+ \begin{equation}
+     \langle H \rangle = \frac{v}{\sqrt{2}}
+ \end{equation}
+ 
+ Em seguida dos cálculos, as equações \textcolor{blue}{(12)} e \textcolor{blue}{(13)} dão forma às equações a seguir : 
+ \begin{equation}
+     \Longrightarrow \frac{y}{\Lambda} \bigg[         \begin{pmatrix}             \Bar{\nu}_l^c &             \Bar{e}_l^c       \end{pmatrix}   \begin{pmatrix} \frac{v}{\sqrt{2}}\\0       \end{pmatrix} \bigg] \cdot \bigg[ \begin{pmatrix} \frac{v}{\sqrt{2}} & 0   \end{pmatrix} 
+         \begin{pmatrix} 
+         \nu_l \\ e_l
+         \end{pmatrix} 
+         \bigg]
+ \end{equation}
+ 
+ \begin{equation}
+     \frac{1}{2}\lambda \frac{v^2}{\Lambda}\Bar{\nu}_l^c \nu_l
+ \end{equation}
+
+ \begin{equation}
+\Longrightarrow 
+     M = \frac{1}{2}\lambda \frac{v^2}{\Lambda}
+ \end{equation}
+  A operador efetivo guia-nos em gerar mecanismos de Seesaw para gerar massa de Majorana para os neutrinos.
+
+\subsection*{Questão 17)}
+\begin{boxx}
+O que é o duplo decaimento beta? Quais são os isótopos usados nos experimentos Exo, Kamlanda-Zen, e Heidelberg-Moscow?
+\end{boxx}
+ É o decaimento espontâneo e raro dentro dos núcleos atômicos, onde se libera partículas $\beta^-$ ou $\beta^+$ na forma $\beta^-\beta^-$ ou $\beta^+\beta^+$.
+ 
+  O isótopo usado no experimento EXO-200(Enriched Xenon Observatory) é o $^{136}$Xe; no experimento KAMLAND-Zen usa-se os isótopos $^{136}$Xe e $^{134}$Xe, cada isótopo correspondendo a 90\% e 8,9\%, respectivamente; para o experimento Heidelberg-Moscow usa-se $^{76}$Ge.  
+  
+  
+\subsection*{Questão 18)}
+\begin{boxx}
+O que é o teorema de Goldstone?
+\end{boxx}
+ O estado de vácuo tem uma quebra de simetria U(1) global. Goldstone, Salam e Weinberg precedendo os estudos sobre os bósons de Nambu-Goldstone, determinam que em uma teoria invariante por Lorentz, a quebra de simetria espontânea resulta na necessidade de uma partícula não-massiva no espectro.
+ 
+  $\Longrightarrow$ Se uma simetria contínua é espontaneamente quebrada, campos sem massa, conhecidos como bósons de Nambu-Goldstone, aparecerão.
+  
+\subsection*{Questão 19)}
+\begin{boxx}
+Em 2012 o Higgs foi descoberto. Quais os valores da massa do Higgs medidas pelos experimentos CMS e ATLAS na época?
+\end{boxx}
+ Em julho de 2012, o CMS e o ATLAS aferiram para uma partícula, idêntica a qual seria o Bóson de Higgs, a massa entre 125\si{GeV/c^2} e 126\si{GeV/c^2}; posteriormente confirmou-se que era o próprio Bóson de Higgs teorizado pelo modelo padrão. 
+ 
+\subsection*{Questão 20)}
+\begin{boxx}
+Que tipo de buracos negros podem representar uma componente de Matéria Escura?
+\end{boxx}
+
+\subsection*{Questão 21)}
+\begin{boxx}
+Explique os métodos de detecção de Matéria Escura. 
+\end{boxx}
+
+\subsection*{Questão 22)}
+\begin{boxx}
+O que é a concordância cósmica?
+\end{boxx}
+
+
+
+\subsection*{Questão 23)}
+\begin{boxx}
+O que é a Lei de Hubble?
+\end{boxx}
+
+ A Lei de Hubble é a formulação do astrônomo Edwin Powell Hubble para o afastamento das galáxias em relação à Via Láctea, que se dá  relacionando a velocidade pela distância :
+ 
+ $$ v = H_0 \cdot d $$
+ 
+ ou sua forma generalizada : 
+ 
+ $$ v_i = \Sigma_i (\Vec{d}{_i} + \Vec{\lambda}_i) $$
+
+
+\subsection*{Questão 24)}
+\begin{boxx}
+Por que a CMB tem um espectro de corpo negro?
+\end{boxx}
+
+\subsection*{Questão 25}
+\begin{boxx}
+Para qual ângulo entre dois pontos no espaço a anisotropia da CMB é máxima?
+\end{boxx}
+
+\subsection*{Questão 26)}
+\begin{boxx}
+Com o CAMB podemos estudar Neff? Qual o efeito disto na matéria?
+\end{boxx}
+
+\subsection*{Questão 27)}
+\begin{boxx}
+O que é escala de corte no espectro de potência?
+\end{boxx}
+
+\subsection*{Questão 28)}
+\begin{boxx}
+Que tipo de hidrogênio é usado para sondar o universo? Qual é a tendência?
+\end{boxx}
+
+\subsection*{Questão 29)}
+\begin{boxx}
+O BINGO almeja sondar quais parâmetros?
+\end{boxx}
+BINGO é um rádio telescópio. Sua busca é medir Oscilações Acústicas de Bárions (BAO) utilizando emissão de rádio de Hidrogênio. 
+
+\subsection*{Questão 30)}
+\begin{boxx}
+O que é a linha de 21cm?
+\end{boxx}
+ A radiação de 21 cm do hidrogênio atômico foi
+prevista teoricamente pelo dinamarquês H. C. van de Hulst,
+quando propôs, em 1944, que o átomo de hidrogênio emitiria
+uma radiação nesse comprimento de onda como resultado
+da variação do spin do elétron.
+
+Por serem o próton e o elétron partículas com cargas elétricas em rotação, eles criam campos magnéticos que interagem,
+de forma que o estado de $less-energy$ é com spins
+antiparalelos, e o de $higher-energy$ com spins paralelos. A
+diferença de energia entre os dois níveis é de $hv = 6 x 10^-6$ eV,
+o que corresponde a frequência de 1.420,4 MHz. Assim,
+a transição entre esses dois níveis de estrutura origina uma linha de comprimento de onda de $\lambda =c/v$ 21,049 cm, na faixa de rádio.
+
+%\subsection{Questão 1}
+
+%\subsection{Questão 1}
+
+%\section{Respostas}
+
+%\begin{enumerate}
+ 
+%     \[  \left( \frac{243}{123} \right) \]
+    
+%\end{enumerate}
+
+
+%\subsection{Questão 1}
+
+
+
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[scale=3.0]{universe}
+%\caption{The Universe}
+%\label{fig:universe}
+%\end{figure}
+
+%\begin{figure}[h!]
+
+%\includegraphics[scale=0.5]{laranja-01}
+%\caption{Laranja}
+%\label{fig:universe}
+%\end{figure}
+\begin{center}
+    \includegraphics[scale=0.3]{Standard Elemental particles theory.png}
+\end{center}
+
+
+\newpage
+\begin{center}
+ \section*{Conclusão}
+ Agradeço ao professor José Adballa Helayël, que me acolheu como aluno, e a Professora Patrícia, me auxiliaram nas direcções de minhas respostas.
+Agradeço ao(s) corretor(es), uma ótima oportunidade de aprendizado.
+
+Espero nos encontrarmos pela vida.
+
+\vspace{5mm}
+
+  {\fontfamily{qcr}\selectfont
+"Tudo no mundo começou com um sim. Uma molécula disse sim a outra molécula e nasceu a vida. Mas antes da pré-história havia a pré-história da pré-história e havia o nunca e havia o sim. Sempre houve. Não sei o quê, mas sei que o universo jamais começou."
+
+\vspace{3mm}
+Lispector, Clarice
+}
+   
+\end{center}
+
+\newpage
+\section*{\textit{Referências}}
+\begin{enumerate}
+    \item{Photon and Graviton Mass Limits}
+    
+    \textcolor{blue}{https://arxiv.org/pdf/0809.1003.pdf}
+    
+    \item{PASCCO : Modelo Padrão de Física de Partículas Aula 1- Paulo Silva - UFPB}
+    
+   \textcolor{blue}{https://youtu.be/15FdYdGiArs?t=1006}
+   
+   \item{O Fóton tem Massa? Faça Pesquisa Científica com a Lei de Coulomb! - Manoel Messias - UFMA}
+   \textcolor{blue}{https://www.youtube.com/watch?v=7VJdRF2nIC0}
+   
+   \item{Produção de Fotinos e Gluínos nas Extensões Supersimétricas da Eletrodinâmica Quântica e da Cromodinâmica Quântica - Espíndola, Danusa Bueno}
+   
+   \textcolor{blue}{https://lume.ufrgs.br/handle/10183/31009}
+   
+   \item{Experimental tests of Coulomb's Law and the photon rest mass - Liang-Cheng Tu and Jun Luo}
+   
+ \textcolor{blue}{https://bit.ly/3e4UBmY} 
+ 
+   \item{PASCCO: Física de Neutrinos Aula 1 - Carlos Pires - UFPB}
+
+\textcolor{blue}{https://www.youtube.com/watch?v=zfPT5XcBhhQ&feature=emb_titl}
+
+   \item{Compreendendo a oscilação dos neutrinos - Gustavo do A. Valdiviesso e Marcelo M. Guzzo}
+ 
+   
+\textcolor{blue}{http://www.sbfisica.org.br/rbef/pdf/v27_495.pdf}
+   
+   
+   \item{Neutrinos Solares} 
+   
+   \textcolor{blue}{http://propg.ufabc.edu.br/mnpef-sites/neutrinos/index.php/fontes/solares/}
+   
+   \item{Dublo Decaimento Beta Aula 1 e 2 - Diego Cogollo - UFCG}
+   
+   \textcolor{blue}{https://www.youtube.com/watch?v=fafHVkzPvN4&feature=emb_title}
+   
+   \item{Os Átomos São Eternos? (O Decaimento de Prótons) - Pedro Loos}
+   
+   \textcolor{blue}{https://www.youtube.com/watch?v=Apz2y3kZxRY}
+   
+   \item A Lei de Hubble e a Homogeneidade do Universo - Fernando Kokubun
+   
+   \textcolor{blue}{http://sbfisica.org.br/rbef/pdf/v21_311.pdf}
+   
+   \item Vinculando a fase de violação de CP de neutrinos de Majorana na era de precisão da Cosmologia e dos experimentos de duplo decaimento Beta - Alexandre Argüello Quiroga
+   
+   \textcolor{blue}{https://bit.ly/3eavYVY} 
+   
+   \item The HEIDELBERG-MOSCOW EXPERIMENT - H.V.Klapdor-Kleingrothaus
+
+   \textcolor{blue}{https://bit.ly/2TEVtW2}
+   
+   \item Uma Introdução à Teoria Quântica de Campos: Quebra
+   Espontânea de Simetria - Heitor do Amaral Jurkovich
+  
+   \textcolor{blue}{https://bit.ly/3jEXrjD}
+   
+   \item O telescópio BINGO: a nova janela de 21cm para exploração do universo escuro e outras questões astrofísicas 
+   
+   \textcolor{blue}{https://bit.ly/3jKzyr8}
+   
+   \item Aula 22: Meio interestelar - Maria de Fátima Oliveira Saraiva, Kepler de Souza Oliveira Filho e Alexei Machado Müller
+
+    
+   
+   \textcolor{blue}{https://bit.ly/384di9c}
+   
+   \item PASCCO: Buracos Negros Aula 1 - Bruno Carneiro -UFPE
+   
+   \textcolor{blue}{https://www.youtube.com/watch?v=PAOu_cqbq-4&feature=emb_title}
+   
+   \item PASCCO : Buracos Negros Aula 2 - Bruno Carneiro -UFPE
+   
+   \textcolor{blue}{https://www.youtube.com/watch?v=GkhAjvrWIeU&feature=emb_title}
+   
+   \item Mecanismo de Higgs - Luciano Abreu - Aula 2
+   
+  \textcolor{blue}{https://www.youtube.com/watch?v=tgMJXiZ_PqU}
+   
+\end{enumerate}
+\end{document}
